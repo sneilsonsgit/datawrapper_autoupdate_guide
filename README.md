@@ -1,4 +1,3 @@
-
 ## A guide to making auto-updating charts using R and Datawrapper
 
 ![This chart auto-updates once a day!](chart1.png)
@@ -143,18 +142,18 @@ Basically you are going to write something that fills in the below:
 #description of the cron job you’re running
 * * * * * /usr/local/bin/Rscript <your unique filepath>
 
-This is what mine looks like:
+#This is what mine looks like:
 #eviction tracking script
 02 12 * * * /usr/local/bin/Rscript /Users/sneilson/cron_jobs/evictions_tracking.R
 ```
 
 (Note 1: Find the full path of your file by right-clicking the script, holding down the option key, and clicking `copy <filename> as Pathname`)
 
-(Note: your Rscript path might not look exactly like this: `/usr/local/bin/Rscript`. If so, you will have to locate it yourself. I found this guide very helpful for doing that, along with generally integrating cron and R.)
+(Note: your Rscript path might not look exactly like this: `/usr/local/bin/Rscript`. If so, you will have to locate it yourself. I found [this guide](https://www.youtube.com/watch?v=w2Ka5u5jlJU) very helpful for doing that, along with generally integrating cron and R.)
 
 Once you have set up the time you want your cron job to run, and put your filepath and the location of R in there, then you can type in `control + c` to exit insert mode, and then type in `:wq` to exit the crontab entirely.
 
-#### Voila! 
+#### Voila!
 
 Your chart should auto-update, but you can check by first setting your crontab to work minutes after you set it up.
 
