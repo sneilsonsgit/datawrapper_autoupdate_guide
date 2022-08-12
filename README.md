@@ -1,13 +1,3 @@
----
-title: "Susie's guide to making auto-updating charts using Datawrapper and R"
-author: "Susie Neilson"
-date: '2022-08-12'
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ## A guide to making auto-updating charts using R and Datawrapper
 
@@ -169,3 +159,11 @@ Once you have set up the time you want your cron job to run, and put your filepa
 Your chart should auto-update, but you can check by first setting your crontab to work minutes after you set it up.
 
 One caveat: Your computer will need to be on at the time you've scheduled your script to run. If it misses one day, it will update the following day.
+
+---
+title: "Susie's guide to making auto-updating charts using Datawrapper and R"
+author: "Susie Neilson"
+date: '2022-08-12'
+output: html_document
+---
+
