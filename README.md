@@ -122,7 +122,7 @@ dw_publish_chart("chartcode")
 
 That's it! You can make any additional formatting edits in Datawrapper's interface, and those will stick around as long as you don't edit them from your script.
 
-Now, if you want to go into RStudio and run this script manually every day, that's fine. But what if you just want this to hum along merrily in the background as you move onto new exciting projects
+Now, if you want to go into RStudio and run this script manually every day, that's fine. But what if you just want this to hum along merrily in the background as you move onto new exciting projects?
 
 This is where our friend the cron job comes in, with its buddy the command line.
 
